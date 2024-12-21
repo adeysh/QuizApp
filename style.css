@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom right, navy, blue, violet);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-height: 100px;
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 1px 1px 60px 10px rgba(1, 1, 1, 0.3);
+}
+
+.container h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    font-size: 25px;
+    position: relative;
+}
+
+.container h2 span {
+    position: absolute;
+    right: 0;
+}
+
+.questions {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.answers {
+    margin-top: 20px;
+}
+
+.ansBtn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: left;
+    transition: all 0.3s;
+    border-radius: 10px;
+    border: none;
+}
+
+.ansBtn:hover:not([disabled]) {
+    background-color: #9d9d9d;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px 2px rgba(1, 1, 1, 0.2);
+    color: white;
+}
+
+.ansBtn:disabled {
+    cursor: no-drop;
+}
+
+.nextBtn {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.nextBtn button {
+    font-size: 22px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.nextBtn button:hover {
+    background-color: #ccc;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 20px 1px rgba(1, 1, 1, 0.1);
+}
+
+.correct {
+    background-color: green;
+    transition: all 0.3s;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    transition: all 0.6s;
+    color: whitesmoke;
+}
+
+/* .quiz {
+    display: block;
+} */
+
+.startBtn {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.startBtn button {
+    font-size: 22px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.startBtn button:hover {
+    background-color: #ccc;
+    transition: all 0.3s;
+    color: white;
+    box-shadow: 1px 1px 10px 2px rgba(1, 1, 1, 0.2);
+}
